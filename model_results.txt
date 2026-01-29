@@ -1,0 +1,16 @@
+MODEL COMPARISON RESULTS
+============================================================
+Dataset: 1988 rows after outlier removal
+Train: 1590, Test: 398
+Features: 11
+
+Model                    R2 Train    R2 Test      Gap          MAE   Pass
+----------------------------------------------------------------------
+Linear Regression          0.8020     0.7629   0.0391 $    62,742    YES
+Random Forest              0.9693     0.7152   0.2541 $    70,982     NO
+Gradient Boosting          0.9999     0.6555   0.3443 $    75,888     NO
+
+============================================================
+SELECTED MODEL: Linear Regression
+R2 Test Score: 0.7629
+Threshold (0.75): PASSED
