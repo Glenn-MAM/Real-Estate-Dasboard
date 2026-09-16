@@ -302,4 +302,8 @@ with gr.Blocks(title="Real Estate Investor Dashboard", css=custom_css) as demo:
 # =============================================================================
 
 if __name__ == "__main__":
-    demo.launch(share=False)
+    import os
+    demo.launch(
+        server_name="0.0.0.0",
+        server_port=int(os.environ.get("PORT", 7860))
+    )
